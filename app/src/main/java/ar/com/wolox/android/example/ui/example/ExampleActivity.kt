@@ -10,4 +10,8 @@ class ExampleActivity : WolmoActivity() {
     override fun init() {
         replaceFragment(R.id.vActivityBaseContent, ExampleFragment())
     }
+
+    fun showOrdersFragment() {
+        replaceFragment(R.id.vActivityBaseContent, OrdersFragment())
+    }
 }

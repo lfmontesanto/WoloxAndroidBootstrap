@@ -10,6 +10,10 @@ import kotlinx.android.synthetic.main.fragment_example.*
 
 class ExampleFragment : WolmoFragment<ExamplePresenter>(), IExampleView {
 
+    override fun goToOrders() {
+        (activity as ExampleActivity).showOrdersFragment()
+    }
+
     override fun layout(): Int = R.layout.fragment_example
 
     override fun init() {

@@ -20,8 +20,6 @@ query GetOrders($page: Int, $limit: Int){
       }
     }
     current_count
-    current_page
-    next_page
     total_count
     total_pages
   }

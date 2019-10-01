@@ -27,4 +27,17 @@ class GraphQlService {
                         .limit(limit)
                         .build())
     }
+
+    companion object {
+        private var graphQlService: GraphQlService? = null
+
+        fun getInstance(): GraphQlService {
+            return if (graphQlService == null) {
+                graphQlService = GraphQlService()
+                graphQlService as GraphQlService
+            } else {
+                graphQlService as GraphQlService
+            }
+        }
+    }
 }
