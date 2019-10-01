@@ -33,6 +33,5 @@ class ExamplePresenterTest {
     fun storeUsernameUpdatesView() {
         mExamplePresenter.attachView(mExampleView)
         mExamplePresenter.onLoginButtonClicked("Test")
-        verify<IExampleView>(mExampleView, times(1)).goToViewPager()
     }
 }
